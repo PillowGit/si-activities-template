@@ -1,0 +1,2 @@
+hello_world:
+  cmd: "g++ -std=c++2b main.cpp -o main && ./main"
