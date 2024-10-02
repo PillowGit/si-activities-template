@@ -24,11 +24,11 @@ def run(activity_name: str) -> None:
         raise RuntimeError(f"Activity not found: {activity_name}")
     if "cmd" not in activity_entry:
         raise RuntimeError(f"Command not found for the following activity: {activity_name}")
-    os.system(f"cd {working_dir / activity_name}")
+    move_cmd: str = f"cd {working_dir / activity_name}"
+    run_cmd = activity_entry["cmd"]
     os.system("clear")
-    cmd = activity_entry["cmd"]
-    print(cmd)
-    os.system(cmd)
+    print(run_cmd + "\n")
+    os.system(f"{move_cmd} && {run_cmd}")
 
 if __name__ == "__main__":
     if not activities_yaml.exists() or not activities_yaml.is_file():
