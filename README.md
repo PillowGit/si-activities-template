@@ -16,7 +16,7 @@ cd session-3
 with the following command:
 
 ```bash
-./run activity_name
+./run.sh activity_name
 ```
 
 # Having trouble getting the latest activities?
