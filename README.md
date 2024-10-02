@@ -30,4 +30,4 @@ chmod +x git_reset.sh
 ```
 
 > [!WARNING]
-> Incase you have code/activities in this repo you want to save, you should make a copy of those before running this script, just incase.
+> Incase you have code/activities in this repo you want to save, you should make a copy of those before running this script, just incase. It's designed to save your local changes, but it isn't perfect.
