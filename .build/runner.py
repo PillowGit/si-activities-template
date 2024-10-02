@@ -24,6 +24,7 @@ def run(activity_name: str) -> None:
         raise RuntimeError(f"Activity not found: {activity_name}")
     if "cmd" not in activity_entry:
         raise RuntimeError(f"Command not found for the following activity: {activity_name}")
+    os.system(f"cd {working_dir / activity_name}")
     os.system("clear")
     cmd = activity_entry["cmd"]
     print(cmd)
